@@ -1,0 +1,441 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+}
+body::-webkit-scrollbar{
+    width: 2rem;
+    
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+    background-color: rgba(225, 216, 216, 0.406);
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0rem 0rem 10px rgb(255, 255, 255);
+}
+body::-webkit-scrollbar-track{
+    background-image: linear-gradient(to bottom, #000000, #3b3b3b, #e2e2e2, #4a0481, #021667);    
+}
+body{
+    background-color: black;
+    
+    font-family :
+CircularSp
+CircularSp-Arab
+CircularSp-Hebr
+CircularSp-Cyrl
+CircularSp-Grek
+CircularSp-Deva
+"Helvetica Neue"
+helvetica
+arial
+"Hiragino Kaku Gothic Pro"
+Meiryo
+"MS Gothic"
+sans-serif
+}
+
+main{
+    display: flex;
+    margin:.6rem 1.2rem;
+}
+.leftcont{
+    animation: leftslide 1s ease 0s 1s  ;
+     height: 100vh;
+    flex-basis: 24%;
+}
+@keyframes leftslide {
+    0%{
+       background-color: red;
+        flex-basis: 0%;
+    }
+    100%{
+       
+
+    }
+    
+}
+.leftbox1{
+    padding: 2.2rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap:2.2rem;
+    background-color: #121212;
+    border-radius: .8rem;
+}
+
+#lefthome{
+    cursor: pointer;
+    color:white;
+    transition: all ease 300ms;
+}
+#leftsearch{
+    cursor: pointer;
+    transition: all ease 300ms;
+    color:grey;
+}
+#leftsearch:hover{
+    cursor: pointer;
+    transition: all ease 300ms;
+    color:white;
+}
+.leftbox1 img{
+width: 8rem;
+}
+.lbox1child{
+    display: flex;
+    gap:1.8rem;
+    width: fit-content;
+    font-size: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+}
+.rightcont{
+    flex-basis: 80%;
+}
+/* -----------------------leftbox1 completed--------------- */
+
+
+.leftbox2{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    border-radius: .8rem;
+}
+.lbox2librarydiv{
+    padding: 1rem 2rem;
+    display: flex;
+    gap:1.8rem;
+    width: fit-content;
+    font-size: 1.7rem;
+    font-family: 'Roboto', sans-serif;
+    color:grey;
+}
+
+.lbox2playlistdiv{
+    margin-block: 1.3rem;
+    margin-inline: 1rem;
+    padding: 1.2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.8rem;
+    width:calc(100%-2rem);
+    font-size: 1.7rem;
+    border-radius: .8rem;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(128, 128, 128, 0.116);
+}
+.lbox2playlistdiv h4{
+    font-size: 1.6rem;
+    
+    width: fit-content;
+}
+.lbox2playlistdiv h5{
+    font-size: 1.5rem;
+    font-weight: 6S00;
+    width: fit-content;
+}
+.lbox2playlistdiv h6{
+    transition: all ease 300ms;
+
+    font-size: 1.4rem;
+    color:black;
+    background-color: white;
+    width: fit-content;
+    padding: .4rem 1.6rem;
+    border-radius: 3rem;
+}
+.lbox2playlistdiv h6:hover
+{
+    transition: all ease 300ms;
+    cursor: pointer;
+    scale: 1.1;
+}
+.lbox2podcastdiv h6:hover
+{
+    cursor: pointer;
+    transition: all ease 300ms;
+    scale: 1.1;
+}
+
+
+.lbox2podcastdiv{
+    margin-block: 1.2rem;
+    margin-inline: 1rem;
+    padding: 1.2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.8rem;
+    width:calc(100%-2rem);
+    font-size: 1.7rem;
+    border-radius: .8rem;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(128, 128, 128, 0.116);
+}
+.lbox2podcastdiv h4{
+    font-size: 1.6rem;
+    
+    width: fit-content;
+}
+.lbox2podcastdiv h5{
+    font-size: 1.5rem;
+    font-weight: 6S00;
+    width: fit-content;
+}
+.lbox2podcastdiv h6{
+    transition: all ease 300ms;
+
+    font-size: 1.4rem;
+    color:black;
+    background-color: white;
+    width: fit-content;
+    padding: .4rem 1.6rem;
+    border-radius: 3rem;
+}
+
+
+.lbox2menudiv{
+
+    margin-block: 6rem;
+    margin-inline: 1rem;
+    padding: 1rem 2rem;
+    gap:1.8rem;
+    border-radius: .8rem;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+}
+.lbox2menudiv ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    gap:3rem;
+}
+.lbox2menudiv ul a{
+    
+    width: fit-content;
+    text-decoration: none;
+    color:grey
+}
+.lbox2menudiv ul a:hover{
+    transition: all ease 300ms;
+
+    
+    width: fit-content;
+    text-decoration: none;
+    color:rgb(255, 255, 255)
+}
+
+.lbox2langdiv{
+    margin-block: 3rem;
+    margin-inline: 1rem;
+    padding: 1rem 2rem;
+    gap:.8rem;
+    display: flex;
+    width: fit-content;
+    border-radius: .8rem;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    border:.5px solid white;
+    border-radius: 3rem;
+}
+.lbox2langdiv h6{
+    width: fit-content;
+    border-radius: .8rem;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    
+}
+.lbox2langdiv:hover{
+    transition: all ease 300ms;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* ------------left side done-------------- */
+
+
+.rightcont{
+    background-color: #121212;
+    margin-left: 1rem;
+    border-radius: .8rem;
+}
+header{
+    position: sticky;
+    top:1rem;
+    background-color: #12121253;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.headsymboldiv{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.headsymboldiv i{
+    margin-left: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logindiv{
+    display: flex;
+    gap:3rem;
+}
+.logindiv h6:nth-child(1){
+    transition: all ease 300ms;
+    font-family: 'Noto Sans Linear B', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color:white;
+    width: fit-content;
+    padding: 1.5rem 3.5rem;
+    border-radius: 3rem;
+}
+.logindiv h6:nth-child(1):hover{
+    transition: all ease 300ms;
+   scale: 1.1;
+}
+.logindiv h6:nth-child(2){
+    transition: all ease 300ms;
+    font-family: 'Noto Sans Linear B', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color:black;
+    background-color: white;
+    width: fit-content;
+    padding: 1.5rem 3.5rem;
+    border-radius: 3rem;
+}
+.logindiv h6:nth-child(2):hover{
+    transition: all ease 300ms;
+   scale: 1.1;
+}
+
+/* -------------right header ends here ------------ */
+
+.mainplaylistdiv{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    
+}
+.mainplaylistdiv a:nth-child(1){
+    text-decoration: none;
+    color:white;font-family: 'Lato', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.mainplaylistdiv a:nth-child(2){
+    
+    text-decoration: none;
+    color:white;font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+}
+.mainplaylistdiv a:hover{
+    transition: all ease 300ms ;
+    text-decoration: underline;
+}
+.titlelink{
+    
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardcont{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    margin-top: 1rem;
+    width: 15rem;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 8rem;
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 300ms;
+}
+.card:hover{
+    scale: 1.05;
+    background-color: rgba(128, 128, 128, 0.8);
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 300ms;
+    
+}
+.card:hover img{
+    border-radius: 1rem;
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 300ms;
+    
+}
+.card:hover p{
+    color:white;
+    
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 300ms;
+}
+.card img{
+width: 13rem;
+}
+
+.card h6{
+    margin-top: .5rem;
+    font-size: 1.4rem;
+    font-family: 'Noto Sans Linear B', sans-serif;
+    color:white;
+}
+.card p{
+    margin-top: .5rem;
+    color:grey;
+    font-family: 'Noto Sans Linear B', sans-serif;
+font-size: 1.2rem;
+}
+
+
+
+
+
+/* -----------styling ends here for desktop----------- */
+
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+    main{
+        flex-direction: column;
+        gap:2rem;
+    }
+    .cardcont{
+        align-items: center;
+        flex-direction: column;
+    }
+    .card
+{        overflow: hidden;
+        text-align: center;
+        margin-left: 1em;
+        width: 30rem;
+    }
+    .card img{
+        width: 26rem;
+        margin-left: 1rem;
+    }
+
+
+    }
+  
