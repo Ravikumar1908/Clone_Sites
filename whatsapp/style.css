@@ -67,7 +67,7 @@ border-radius: 3em 3em 0% 3em ;
 }
 .notinum{
     text-align: center;
-    border-radius: 50%;
+    border-radius: 5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding:.5rem;
     font-size: 1rem;
