@@ -1,0 +1,429 @@
+:root{
+--greendark:#008069;
+--greenlight:#00a884;
+--blackdark:#131c21;
+--blackcenter:#1c2327;
+--blacklight:#2a2f33;
+--trans: all ease 300ms;
+--fontmain: 'Roboto', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 62.5%;
+}
+main{
+    display: flex;
+}
+.recievedmessage:not(.recievedmessage img){
+    
+    width: fit-content;
+    background-color: var(--blacklight);
+    color: white;
+    font-family: var(--fontmain);
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-block:.5rem;
+    border-radius: 3em 3em 3em 0% ;
+}
+.sendmessage::after{
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    top:.5rem;
+    font-size: 1rem;
+    content: "12:32";
+}
+.recievedmessage::after{
+    margin-right: 1rem;
+    position: relative;
+    margin-left: 1rem;
+    top:.5rem;
+    font-size: 1rem;
+    content: "12:32";
+}
+.sendmessage:not(.sendmessage img){
+    margin-block:.5rem;
+    position: relative;
+    background-color: var(--greendark);
+    left:100%;
+    transform: translateX(-100%);
+    width: fit-content;
+color: white;
+font-family: var(--fontmain);
+font-size: 1.6rem;
+padding: 1rem;
+border-radius: 3em 3em 0% 3em ;
+}
+.sendmessage img,.recievedmessage img{
+    border-radius: 3em 3em 0% 3em ;
+ 
+
+}
+.notinum{
+    text-align: center;
+    border-radius: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:.5rem;
+    font-size: 1rem;
+    background-color: var(--greenlight);
+    color:black;
+}
+.leftdiv{
+    /* position: fixed;  */
+    align-items: center;
+    background-color:var(--blackdark);
+    width:3vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lefttopcont{
+    transition: var(--trans);
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+.lefttopcont i{
+    position: relative;
+    padding:1rem;
+    color:white;
+    
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.lefttopcont i:nth-child(1)
+{
+    border-left: 3px solid var(--greenlight);
+}
+.leftbottomcont{
+    display: flex;
+    flex-direction: column;
+}
+.leftbottomcont i{
+    position: relative;
+    padding:1rem;
+    color:white;
+    
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.leftdiv i:hover{
+    transition: var(--trans);
+    background-color: var(--blacklight);
+}
+#leftnotinum{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+/* -----------------left div ends here -------------- */
+/* -----------------center div starts here -------------- */
+
+.centerdiv{
+    border-right: 1px solid black;
+    height: 100vh;
+    /* margin-left: 3vw; */
+    padding: 2rem 2rem;
+    width: 23vw;
+    background-color: var(--blackcenter);
+    display: flex; 
+    flex-direction: column;  
+}
+.centertopdiv{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.pchat{
+    font-family: var(--fontmain);
+    font-size: 2.5rem;
+    color:white;
+}
+.ctopicondiv{
+
+}
+.ctopicondiv i{
+    padding :1rem;
+    color:white;
+    font-size:1.5rem;
+    margin-left: 1rem;
+}
+.ctopicondiv i:hover{
+    background-color: var(--blacklight);
+
+}
+.centersearchdiv{
+    margin-top: 2rem;
+}
+.inputdiv{
+    position: sticky;
+    top: 0;
+position: relative;
+}
+.inputdiv:hover{
+position: relative;
+}
+.inputdiv input[type="text"]
+{
+    border-radius: .5rem;
+    font-family: var(--fontmain);
+    color:white;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding:1rem 1rem 1rem 3rem;
+    background-color: var(--blacklight);
+    border-bottom:  1px solid white;
+    transition: var(--trans);
+}
+.inputdiv input[type="text"]:hover
+{
+  transition: var(--trans);
+    background-color: var(--blackdark);
+}
+.inputdiv input[type="text"]:focus
+{
+  transition: var(--trans);
+    background-color: var(--blackdark);
+    border-bottom:  1px solid var(--greenlight);
+}
+.searchicon {
+    position: absolute;
+    left:3%;
+    top:50%;
+    transform: translateY(-50%);
+}
+.searchicon i{
+    color:white;
+}
+
+.topfixed{
+    position: sticky;
+    top:0; 
+}
+
+.centerprofilelistdiv{
+    height: calc(100vh-h);
+    margin-top: 1rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.centerprofilelistdiv::-webkit-scrollbar{
+    width: 10px;
+}
+.centerprofilelistdiv::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background-color:var(--blacklight);
+}
+.centerprofilelistdiv::-webkit-scrollbar-track{
+    background-color:var(--blackdark);
+    border-radius: 5rem;
+
+}
+.profilelistdiv{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    transition: var(--trans);
+    border-radius: .5rem;
+}
+.profilelistdiv:hover{
+    background-color: var(--blacklight);
+    transition: var(--trans);
+}
+.profilelistnamediv a{
+    text-decoration: none;
+}
+.profilepicdiv img{
+    margin-inline: 1rem;
+    width: 5rem; 
+
+}
+.profilelistnamediv{
+
+}
+.name{
+    color:white;
+    font-family: var(--fontmain);
+    font-size: 1.6rem;
+    margin-bottom: .4rem;
+}
+.lastmessage{
+    font-size: 1.4rem;
+    font-family: var(--fontmain);
+    color:grey;
+}
+.profiltlisttimediv{
+    position: absolute;
+   right: .5rem;
+    
+}
+#firstprofile{
+    background-color: var(--blacklight);
+}
+.time{
+    margin-bottom: .4rem;
+    color:var(--greenlight);
+    font-size: 1.4rem;
+}
+
+
+/* ----------------centerdiv ends here ------------ */
+
+.rightdiv{
+    width: 74vw;
+    display: flex;
+    flex-direction: column;
+}
+.rightheader{
+    padding:2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blackcenter);
+}
+.imgandnamediv{
+    display: flex;
+    align-items: center;
+}
+.imgandnamediv>img{
+    width: 3rem;
+    margin-inline: 1rem;
+}
+.headericondiv{
+    display: flex;
+    align-items: center;
+    transition: var(--trans);
+}
+.headericondiv i{
+    padding: 1rem;
+    font-size: 1.6rem;
+    color:white;
+}
+.headericondiv i:hover{
+    transition: var(--trans);
+    background-color: var(--blackdark);
+}
+.calldiv{
+    margin-right: 1rem;
+    transition: var(--trans);
+    background-color: var(--blacklight);
+}
+
+
+.chatpagediv{
+    position: relative;
+
+}
+.chatpage{
+padding-bottom:5rem;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-inline:4rem;
+    height: calc(100vh - 7.6rem);
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+}
+
+.chatpage::-webkit-scrollbar{
+    width: 10px;
+}
+.chatpage::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+  color:var(white);
+}
+.chatpage::-webkit-scrollbar-track{
+    background-color:var(--blackdark);
+    border-radius: 5rem;
+
+}
+.chatinputdiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--blackdark);
+    padding: 1rem;
+    width: 73.4vw;
+
+    position: absolute;
+    inset: auto auto 0 0;
+}
+.chatinputdiv i{
+    font-size: 2rem;
+    color:white;
+    padding: 1rem;
+}
+.chatinputdiv i:hover{
+    transition: var(--trans);
+    background-color: var(--blacklight);
+}
+.chatinput[type="text"]{
+    color:white;
+    font-size: 1.6rem;
+    font-family: var(--fontmain);
+    background-color: var(--blackdark);
+    width: 80%;
+    outline: none;
+    border: none;
+    padding: 1rem 0rem;
+}
+.chatinput::placeholder{
+    color:grey;
+}
+
+@media only screen and (max-width:425px)
+{
+   main{
+    display: flex;
+    flex-direction: column;
+   }
+   .leftdiv{
+    width:100vw;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    flex-direction:row;
+   }
+   .leftdiv i{
+    font-size:2rem;
+   }
+   .lefttopcont, .leftbottomcont{
+    flex-direction: row;
+    padding-block: 1em;
+    margin: 0;
+   }
+   .lefttopcont i:nth-child(1)
+{
+    border-bottom: 3px solid var(--greenlight);
+    border-left: 0px solid var(--greenlight);
+    
+}
+
+.centerdiv{
+    width: 100vw;
+    height: fit-content;
+}
+
+.topfixed{
+    position: relative;
+}
+.rightdiv{
+    width:100vw
+}
+
+
+.chatinputdiv{
+    width: 100vw;
+}
+}
