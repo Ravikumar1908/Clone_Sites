@@ -15,7 +15,7 @@ eraseBtn.addEventListener("click",()=>{
 
 textArea.addEventListener("keydown",(e)=>{
     let count = parseInt(countBtn.textContent);
-    if(e.key=="Space")
+    if(e.key==" ")
     {
         countBtn.textContent= count+1;
     }
